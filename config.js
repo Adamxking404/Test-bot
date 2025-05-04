@@ -6,5 +6,5 @@ function convertToBool(text, fault = 'true') {
 
 
 module.exports = {
-SESSION_ID: 'ZEROTWO=kmsRFKBD#CSMW_N13TIMTA3i5fUHIoXqX7XGrNUKCgxtz34QmI2M'
+SESSION_ID: 'SCRAPPER-MD=KvAS0BLD#vmEWyn1QevVs_3qPLE5ln7-waAK2lVSHYm69g6JYNrg'
 };
