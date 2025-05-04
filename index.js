@@ -20,14 +20,14 @@ const { File } = require('megajs')
 const path = require('path')
 const msgRetryCounterCache = new NodeCache()
 const prefix = '.'
-const ownerNumber = ['94762898541']
+const ownerNumber = ['94775704025']
 const l = console.log
 var { updateCMDStore,isbtnID,getCMDStore,getCmdForCmdId,connectdb,input,get,updb,updfb } = require("./lib/database")
 
 //===================SESSION============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
   if (config.SESSION_ID) {
-  const sessdata = config.SESSION_ID.replace("ZEROTWO=","")
+  const sessdata = config.SESSION_ID.replace("SCRAPPER-MD=","")
   const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
   filer.download((err, data) => {
     if (err) throw err
@@ -72,7 +72,7 @@ fs.readdirSync("./plugins/").forEach((plugin) => {
 console.log('Plugins installed ✅')
 await connectdb()
 await updb()
-console.log('Zero-Two-MD connected ✅')
+console.log('*Scrapper-MD connected successfully ✅*')
     }
   })
 
@@ -100,8 +100,8 @@ const isGroup = from.endsWith('@g.us')
 const sender = mek.key.fromMe ? (conn.user.id.split(':')[0] + '@s.whatsapp.net' || conn.user.id) : (mek.key.participant || mek.key.remoteJid)
 const senderNumber = sender.split('@')[0]
 const botNumber = conn.user.id.split(':')[0]
-const pushname = mek.pushName || 'Sin Nombre'
-const developers = '94762898541'
+const pushname = mek.pushName || 'Adamxking404'
+const developers = '94775704025'
 const isbot = botNumber.includes(senderNumber)
 const isdev = developers.includes(senderNumber)
 const isMe = isbot ? isbot : isdev 
